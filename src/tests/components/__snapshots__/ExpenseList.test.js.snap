@@ -2,7 +2,7 @@
 
 exports[`should render ExpenseList wih expenses 1`] = `
 <div>
-  <p>
+  <div>
     You have 
     3
      expenses:
@@ -30,14 +30,14 @@ exports[`should render ExpenseList wih expenses 1`] = `
       key="3"
       note=""
     />
-  </p>
+  </div>
 </div>
 `;
 
 exports[`should render ExpenseList with empty message 1`] = `
 <div>
-  <p>
+  <div>
     No expenses
-  </p>
+  </div>
 </div>
 `;

@@ -29,9 +29,14 @@ test('should set sortBy to date', () => {
 })
 
 test('should set text filter', () => {
-    const state = filtersReducer(undefined, { type: 'SET_TEXT_FILTER', filterText: '123Test' })
-    expect(state.text).toBe('123Test')
-})
+    const text = '123Test';
+    const action = {
+      type: 'SET_TEXT_FILTER',
+      text
+    };
+    const state = filtersReducer(undefined, action);
+    expect(state.text).toBe(text);
+  });
 
 test('should set startDate filter', () => {
     const newDate = moment(0).add(4, "days").valueOf()

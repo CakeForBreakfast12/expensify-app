@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const AppRouter = () => (
     <BrowserRouter>
-        <Header />
+        <Header />        
         <Switch>
             <Route path="/" component={ExpenseDashboardPage} exact={true} />
             <Route path="/create" component={AddExpensePage} />
